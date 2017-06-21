@@ -1,0 +1,50 @@
+{
+  "metadata" : {
+    "realm" : "/",
+    "amsterVersion" : "14.0.0",
+    "entityType" : "OAuth2Module",
+    "entityId" : "YahooSocialAuthentication",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "YahooSocialAuthentication",
+    "mixUpMitigation" : false,
+    "ssoProxyUrl" : "https://am5.theidentitycookbook.com:8443/openam/oauth2c/OAuthProxy.jsp",
+    "authenticationLevel" : 0,
+    "accountMapperClass" : "org.forgerock.openam.authentication.modules.oidc.JwtAttributeMapper",
+    "accountMapperConfiguration" : [ "username=id" ],
+    "oauth2LogoutServiceUrl" : null,
+    "anonymousUserName" : "anonymous",
+    "mailGatewayClass" : "org.forgerock.openam.authentication.modules.oauth2.DefaultEmailGatewayImpl",
+    "oauth2EmailAttribute" : null,
+    "smtpHostName" : "localhost",
+    "smtpSslEnabled" : false,
+    "userProfileServiceUrl" : "https://social.yahooapis.com/v1/user/",
+    "openidConnectContextValue" : "",
+    "promptForPassword" : false,
+    "smtpFromAddress" : "info@forgerock.com",
+    "scope" : "sdps-r sdps-w sdpp-w sdrl-w msgr-w gpub-r admg-w yfin-w yfin-r fspt-w fspt-r sdct-w sdct-r",
+    "accessTokenParameterName" : "access_token",
+    "smtpHostPort" : "25",
+    "saveAttributesInSession" : true,
+    "openidConnectIssuer" : "https://login.yahoo.com",
+    "attributeMapperConfiguration" : [ "username=id", "email=mail" ],
+    "clientSecret" : null,
+    "smtpUsername" : null,
+    "openidConnectContextType" : "jwk_url",
+    "authenticationEndpointUrl" : "https://api.login.yahoo.com/oauth2/request_auth",
+    "accessTokenEndpointUrl" : "https://api.login.yahoo.com/oauth2/get_token",
+    "clientId" : null,
+    "accountProviderClass" : "org.forgerock.openam.authentication.modules.common.mapping.DefaultAccountProvider",
+    "smtpPassword" : null,
+    "attributeMappingClasses" : [ "org.forgerock.openam.authentication.modules.common.mapping.JsonAttributeMapper", "org.forgerock.openam.authentication.modules.oidc.JwtAttributeMapper" ],
+    "mapToAnonymousUser" : false,
+    "logoutBehaviour" : "prompt",
+    "createAccount" : true,
+    "_type" : {
+      "_id" : "oauth2",
+      "name" : "OAuth 2.0 / OpenID Connect",
+      "collection" : true
+    }
+  }
+}

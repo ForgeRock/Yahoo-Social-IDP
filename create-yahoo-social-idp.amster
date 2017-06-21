@@ -1,0 +1,7 @@
+//Edit the necessary AM_URL and KEY_LOCATION variables.
+AM_URL="https://am5.theidentitycookbook.com:8443/openam"
+KEY_LOCATION="/home/smof/am5-aws-amster_rsa"
+connect AM_URL -k KEY_LOCATION
+import-config --path YahooSocialAuthenticationModule.json
+import-config --path YahooSocialAuthenticationService.json
+:exit
